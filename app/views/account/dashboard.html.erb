@@ -1,0 +1,11 @@
+   <div class="login-form">
+
+  <div class="title">Dashboard</div>
+  <%= @user.first_name %>
+   <%= @user.last_name %>
+    <% if @user.profile_image.attached? %>
+    <%= image_tag @user.profile_image, width: "300px" %> <br>
+    <% else %>
+    <%= image_tag "/assets/avatar.png", width: "300px"%>
+    <% end %>
+  </div>
